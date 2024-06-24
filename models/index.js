@@ -5,9 +5,16 @@ const sequelize = new Sequelize(
   config.database,
   config.username,
   config.password,
-  config
+  {
+    ...config,
+    pool: {
+      max: 100,
+      min: 10,
+      acquire: 30000,
+      idle: 10000,
+    },
+  }
 );
-
 const User = sequelize.define("User", {
   balance: {
     type: Sequelize.INTEGER,
