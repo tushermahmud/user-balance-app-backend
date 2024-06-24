@@ -17,7 +17,7 @@ To install and run this application, follow these steps:
 1. **Clone the repository:**
 
    ```sh
-   git clone <repository-url>
+   git clone <https://github.com/tushermahmud/user-balance-app-backend.git>
    cd user-balance-app
    ```
 
