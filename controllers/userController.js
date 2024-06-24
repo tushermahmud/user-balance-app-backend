@@ -1,28 +1,3 @@
-// const { User } = require("../models");
-
-// exports.updateBalance = async (req, res) => {
-//   const { userId, amount } = req.body;
-
-//   try {
-//     const user = await User.findByPk(userId);
-//     if (!user) {
-//       return res.status(404).json({ message: "User not found" });
-//     }
-
-//     const newBalance = user.balance + amount;
-//     if (newBalance < 0) {
-//       return res.status(400).json({ message: "Insufficient funds" });
-//     }
-
-//     user.balance = newBalance;
-//     await user.save();
-
-//     res.json({ message: "Balance updated successfully", newBalance });
-//   } catch (error) {
-//     res.status(500).json({ message: "Server error", error: error.message });
-//   }
-// };
-
 const { User } = require("../models");
 const { sequelize } = require("../models");
 
