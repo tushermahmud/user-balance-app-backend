@@ -9,7 +9,6 @@ This is a simple web application built using Node.js, Express, JavaScript, and P
 - [Project Structure](#project-structure)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
-- [License](#license)
 
 ## Installation
 
